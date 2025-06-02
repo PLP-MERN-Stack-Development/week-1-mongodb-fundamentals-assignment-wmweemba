@@ -45,3 +45,39 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB University](https://university.mongodb.com/)
 - [MongoDB Node.js Driver](https://mongodb.github.io/node-mongodb-native/) 
+
+
+### How to Run the MongoDB Queries
+
+The `queries.js` file contains a set of MongoDB queries that you can run using one of the following methods:
+
+#### 1. Using MongoDB Shell (mongosh)
+- Open your terminal or command prompt.
+- Connect to your MongoDB instance by running:
+  ```bash
+  mongosh
+  ```
+- Switch to your target database:
+  ```javascript
+  use plp_bookstore
+  ```
+- Copy and paste the queries from `queries.js` into the shell, or run the file directly if saved locally:
+  ```bash
+  mongosh < path\to\queries.js
+  ```
+
+#### 2. Using MongoDB Compass
+- Open MongoDB Compass and connect to your MongoDB instance.
+- Select the `plp_bookstore` database and choose the `books` collection.
+- Navigate to the **Aggregations** or **Schema** tab (depending on the query type).
+- Copy and paste the desired queries from `queries.js` into the query input area.
+- Click the **Run** button to execute the queries and view the results.
+
+#### 3. Using MongoDB Atlas
+- Log in to your MongoDB Atlas account and navigate to your cluster.
+- Open the **Data Explorer** from the Atlas dashboard.
+- Select the `plp_bookstore` database and the `books` collection.
+- Paste the queries from `queries.js` into the query interface.
+- Execute the queries to see the results in the Atlas UI.
+
+Choose the method that best fits your development environment to run each of the tasks and view their corresponding outputs.
